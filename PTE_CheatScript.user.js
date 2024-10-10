@@ -30,7 +30,7 @@
                     // CP-Cheat
                     if (cheat_setcommandpoints && ClientLib.Data.MainData.GetInstance().get_Player().GetCommandPointCount() < 9999)
                     {
-                        qx.core.Init.getApplication().getChat().getChatWidget().send("/cheat setcommandpoints 9999");
+                       qx.core.Init.getApplication().getChat().getChatWidget().send("/cheat setcommandpoints 9999");
                     }
                     for (var key in bases)
                     {
@@ -47,7 +47,7 @@
                         // RepTime (Off)
                         if (cheat_repairoff && !bases[key].get_IsGhostMode() && bases[key].GetOffenseConditionInPercent() < 100 && bases[key].get_LvlOffense() > 0)
                         {
-                            qx.core.Init.getApplication().getChat().getChatWidget().send("/cheat repairoff " + key);
+                           //qx.core.Init.getApplication().getChat().getChatWidget().send("/cheat repairoff " + key);
                         }
                         else if (!cheat_repairoff && !cheat_repairallpte && bases[key].get_CityRepairData().CanRepairAll(ClientLib.Vis.Mode.ArmySetup))
                         {
