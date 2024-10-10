@@ -30,7 +30,7 @@
                     // CP-Cheat
                     if (cheat_setcommandpoints && ClientLib.Data.MainData.GetInstance().get_Player().GetCommandPointCount() < 9999)
                     {
-                        qx.core.Init.getApplication().getChat().getChatWidget().send("/cheat setcommandpoints 9999");
+                       //qx.core.Init.getApplication().getChat().getChatWidget().send("/cheat setcommandpoints 9999");
                     }
                     for (var key in bases)
                     {
